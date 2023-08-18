@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 20px;
+    padding: 50px;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: 5px solid black;
+    border-radius: 15px;
+    
+}
+
+.heroSection{
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .profileImage{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
+  
+  .herosectionDetails{
+    text-align:left;
+  }
+  h3{
+    margin-bottom: 50px;
+    
+  }
+  
+  .herosectionDetails > h1{
+    font-size: 80px;
+    /* margin: 10px; */
+  }
+
+hr {
+    border-width: 100%;
+    border: none; 
+    border-top: 3px solid black; 
+    margin: 0px 0; 
+  }
+  .summary{
+    margin:50px;
+  }
+
+  .summary > h2{
+    font-size: 30px;
+    margin: 10px;
+
+  }
+  .experience > h2{
+    font-size: 30px;
+    margin:10px
+  }
+  .experience{
+    margin:50px;
+  }
+
+  .professional-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px
+  }
+
+  .right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .vertical-line {
+    width: 1px;
+    height: 100px; /* Adjust the height as needed */
+    background-color: black;
+    margin: 0 auto; /* Center the line horizontally */
+  }
+  .final{
+    /* margin-top: 30px; */
+    display: flex;
+    gap: 30px;
+    justify-content:space-around;
+  }
+  .skills{
+    gap: 20px;
+    padding-top: 10px;
+    /* background-color: cyan; */
+    /* border: 5px 5px 5px 5px;
+    border-color: black; */
+    /* border: 1px solid black;
+    padding: 10px; */
+  }
+  .education{
+    border: 3px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0px 25px;
+    padding-top: 10px;
+    
+    
+  }
+  .contact {
+    padding-top: 10px;
+
+  }
+  .reset-style, .reset-style * {
+    all: revert;
+}
+
+
+
+  
