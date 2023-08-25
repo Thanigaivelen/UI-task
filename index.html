@@ -16,15 +16,25 @@
       />
       <div class="herosectionDetails">
         <hr style="width: 130%;" />
-        <div><h1 style="font-size: 50px;">RACHELLE</h1></div>
-        <!-- <h1 style="line-break: always">
-          RACHELLE<br />
-          BEAUDRY
-        </h1> -->
-        <div><h1  class="reset-style" style="font-size: 50px;margin-top: 0px;margin-bottom: 10px;">BEAUDRY</h1></div>
-        <h3>Babysitter</h3>
-      </div>
+        <div><h1  class="reset-style1" style="font-size: 50px;margin-top: 0px;margin-bottom: 10px;">RACHELLE</h1></div>
+        <div><h1  class="reset-style2" style="font-size: 50px;margin-top: 0px;margin-bottom: 10px;">BEAUDRY</h1></div>
+        <h3 class="pro">Babysitter</h3>
+        <button id="editButton">Enter More details</button>
+      </div> 
     </div>
+    <!-- Popup Form -->
+<div class="popup-container" id="popupContainer">
+  <div class="popup">
+    <h2>Edit Information</h2>
+    <label for="fname">Firstname:</label>
+    <input type="text" id="fname" />
+    <label for="lname">Lastname:</label>
+    <input type="text" id="lname" />
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" />
+    <button id="saveButton">Save</button>
+  </div>
+</div>
     <hr />
     <div class="summary">
       <h2>PROFESSIONAL SUMMARY</h2>
@@ -174,5 +184,31 @@
 
 
     </div>
+
+
+
+
+    <script>
+      const editButton = document.getElementById("editButton");
+      const popupContainer = document.getElementById("popupContainer");
+      const fnameInput = document.getElementById("fname");
+      const lnameInput = document.getElementById("lname");
+      const professionInput = document.getElementById("profession");
+    
+      editButton.addEventListener("click", () => {
+        popupContainer.style.display = "flex";
+        fnameInput.value = document.querySelector(".reset-style1").textContent;
+        lnameInput.value = document.querySelector(".reset-style2").textContent;
+        professionInput.value = document.querySelector(".pro").textContent;
+      });
+    
+      const saveButton = document.getElementById("saveButton");
+      saveButton.addEventListener("click", () => {
+        document.querySelector(".reset-style1").textContent = fnameInput.value;
+        document.querySelector(".reset-style2").textContent = lnameInput.value;
+        document.querySelector(".pro").textContent = professionInput.value;
+        popupContainer.style.display = "none";
+      });
+    </script>
   </body>
 </html>
