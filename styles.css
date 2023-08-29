@@ -157,4 +157,32 @@ hr {
   cursor: pointer;
 }
 
-  
+  @media screen and (max-width: 768px) {
+  .profileImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .herosectionDetails > h1 {
+    font-size: 60px;
+  }
+
+  .popup {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .herosectionDetails > h1 {
+    font-size: 40px;
+  }
+
+  .popup {
+    width: 100%;
+  }
+}
